@@ -15,8 +15,10 @@ class _MainfoodpageState extends State<Mainfoodpage> {
       children: [
         Container(
           child: Container(
+            margin: EdgeInsets.only(top: 40, bottom: 15), // alt-ust
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment:
+                  MainAxisAlignment.spaceBetween, // bosluk düzenlemesi
               children: [
                 Column(
                   children: [Text("Şehir"), Text("İlçe")],
