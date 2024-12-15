@@ -11,24 +11,28 @@ class _MainfoodpageState extends State<Mainfoodpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Container(
-          child: Row(
-            children: [
-              Column(
-                children: [Text("Şehir"), Text("İlçe")],
-              ),
-              Container(
-                height: 45,
-                width: 45,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color.fromARGB(255, 254, 91, 0)),
-              )
-            ],
+        body: Column(
+      children: [
+        Container(
+          child: Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  children: [Text("Şehir"), Text("İlçe")],
+                ),
+                Container(
+                  height: 45,
+                  width: 45,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color.fromARGB(255, 254, 91, 0)),
+                )
+              ],
+            ),
           ),
         ),
-      ),
-    );
+      ],
+    ));
   }
 }
