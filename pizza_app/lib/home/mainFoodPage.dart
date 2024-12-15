@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_app/constants/colors.dart';
 
 class Mainfoodpage extends StatefulWidget {
   const Mainfoodpage({super.key});
@@ -16,6 +17,7 @@ class _MainfoodpageState extends State<Mainfoodpage> {
         Container(
           child: Container(
             margin: EdgeInsets.only(top: 40, bottom: 15), // alt-ust
+            padding: EdgeInsets.only(right: 20, left: 20), // sag-sol
             child: Row(
               mainAxisAlignment:
                   MainAxisAlignment.spaceBetween, // bosluk düzenlemesi
@@ -23,12 +25,17 @@ class _MainfoodpageState extends State<Mainfoodpage> {
                 Column(
                   children: [Text("Şehir"), Text("İlçe")],
                 ),
-                Container(
-                  height: 45,
-                  width: 45,
-                  decoration: BoxDecoration(
+                Center(
+                  child: Container(
+                    height: 45,
+                    width: 45,
+                    child:
+                        Icon(Icons.search, color: Colors.white), //Arama ikonu
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: const Color.fromARGB(255, 254, 91, 0)),
+                      color: AppColors.turuncu1,
+                    ),
+                  ),
                 )
               ],
             ),
