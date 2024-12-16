@@ -27,7 +27,11 @@ class _MainfoodpageState extends State<Mainfoodpage> {
                 Column(
                   children: [
                     Bigtext(color: AppColors.siyah, text: "Şehir"),
-                    Smalltext(color: AppColors.siyah, text: "İlçe")
+                    Row(
+                      children: [
+                        Smalltext(color: AppColors.siyah, text: "İlçe")
+                      ],
+                    )
                   ],
                 ),
                 Center(
