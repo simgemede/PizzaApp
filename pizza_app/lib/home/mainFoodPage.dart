@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pizza_app/constants/colors.dart';
 import 'package:pizza_app/widgets/bigText.dart';
+import 'package:pizza_app/widgets/smallText.dart';
 
 class Mainfoodpage extends StatefulWidget {
   const Mainfoodpage({super.key});
@@ -26,7 +27,7 @@ class _MainfoodpageState extends State<Mainfoodpage> {
                 Column(
                   children: [
                     Bigtext(color: AppColors.siyah, text: "Şehir"),
-                    Text("İlçe")
+                    Smalltext(color: AppColors.siyah, text: "İlçe")
                   ],
                 ),
                 Center(
