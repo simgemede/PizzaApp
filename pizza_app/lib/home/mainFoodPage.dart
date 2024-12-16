@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pizza_app/constants/colors.dart';
+import 'package:pizza_app/widgets/bigText.dart';
 
 class Mainfoodpage extends StatefulWidget {
   const Mainfoodpage({super.key});
@@ -23,7 +24,10 @@ class _MainfoodpageState extends State<Mainfoodpage> {
                   MainAxisAlignment.spaceBetween, // bosluk düzenlemesi
               children: [
                 Column(
-                  children: [Text("Şehir"), Text("İlçe")],
+                  children: [
+                    Bigtext(color: AppColors.siyah, text: "Şehir"),
+                    Text("İlçe")
+                  ],
                 ),
                 Center(
                   child: Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_app/constants/colors.dart';
 
 class Bigtext extends StatelessWidget {
   final Color color;
@@ -14,6 +15,14 @@ class Bigtext extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Text(
+      text,
+      overflow: overflow,
+      style: TextStyle(
+          fontFamily: "Helvetica",
+          fontSize: size,
+          fontWeight: FontWeight.w400,
+          color: color),
+    );
   }
 }
