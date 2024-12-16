@@ -29,7 +29,8 @@ class _MainfoodpageState extends State<Mainfoodpage> {
                     Bigtext(color: AppColors.siyah, text: "Şehir"),
                     Row(
                       children: [
-                        Smalltext(color: AppColors.siyah, text: "İlçe")
+                        Smalltext(color: AppColors.siyah, text: "İlçe"),
+                        Icon(Icons.arrow_drop_down_rounded)
                       ],
                     )
                   ],
